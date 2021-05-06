@@ -53,6 +53,7 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
+        sudo hostname GiriNeko-Maker
 
     - name: Clone source code
       working-directory: /workdir
