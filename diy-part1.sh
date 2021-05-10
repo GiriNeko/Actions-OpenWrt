@@ -10,6 +10,10 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+# R4A Flash Fix
+mv ../mt7621.mk openwrt/target/linux/ramips/image/mt7621.mk
+mv ../mt7621_xiaomi_mir3g-v2.dts openwrt/target/linux/ramips/dts/mt7621_xiaomi_mir3g-v2.dts
+
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
@@ -18,3 +22,4 @@
 
 # Add some packages
 git clone https://github.com/GiriNeko/rkp-ipid package/network/utils/rkp-ipid
+
