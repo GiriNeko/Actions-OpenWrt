@@ -15,3 +15,6 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+# Add some packages
+git clone https://github.com/GiriNeko/rkp-ipid package/network/utils/rkp-ipid
