@@ -10,12 +10,6 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# R4A Flash Fix
-rm -rf openwrt/target/linux/ramips/image/mt7621.mk
-wget -P openwrt/target/linux/ramips/image/mt7621.mk https://raw.githubusercontent.com/GiriNeko/Actions-OpenWrt/XiaoMi_R4A_Gigabyte/mt7621.mk
-rm -rf openwrt/target/linux/ramips/dts/mt7621_xiaomi_mir3g-v2.dts
-wget -P openwrt/target/linux/ramips/dts/mt7621_xiaomi_mir3g-v2.dts https://raw.githubusercontent.com/GiriNeko/Actions-OpenWrt/XiaoMi_R4A_Gigabyte/mt7621_xiaomi_mir3g-v2.dts
-
 # Uncomment a feed source
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
