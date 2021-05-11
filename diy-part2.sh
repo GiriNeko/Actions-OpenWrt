@@ -13,3 +13,6 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
+# R4A Flash Fix
+wget https://raw.githubusercontent.com/GiriNeko/Actions-OpenWrt/XiaoMi_R4A_Gigabyte/mt7621.mk -O target/linux/ramips/image/mt7621.mk
+wget https://raw.githubusercontent.com/GiriNeko/Actions-OpenWrt/XiaoMi_R4A_Gigabyte/mt7621_xiaomi_mir3g-v2.dts -O target/linux/ramips/image/mt7621.mk
