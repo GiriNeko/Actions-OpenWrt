@@ -18,4 +18,4 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 
 # Add some packages
 git clone https://github.com/GiriNeko/rkp-ipid package/network/utils/rkp-ipid
-
+git clone https://github.com/GiriNeko/xmurp-ua.git package/network/utils/xmurp-ua
