@@ -17,5 +17,6 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 # coustom things
-git clone https://github.com/GiriNeko/rkp-ipid package/network/utils/rkp-ipid
-git clone https://github.com/GiriNeko/xmurp-ua.git package/network/utils/xmurp-ua
+git clone https://github.com/GiriNeko/rkp-ipid package/custom/rkp-ipid
+git clone https://github.com/GiriNeko/xmurp-ua.git package/custom/xmurp-ua
+git clone https://github.com/destan19/OpenAppFilter package/custom/OpenAppFilter
